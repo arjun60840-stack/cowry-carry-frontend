@@ -20,9 +20,9 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             {user ? (
               <>
-                <Link href="/dashboard" className="text-gray-300 hover:text-white flex items-center gap-2">
-                  <User className="h-4 w-4" /> Dashboard
-                </Link>
+                <Link href="/dashboard" className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Dashboard</Link>
+                <Link href="/trips" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Find Trips</Link>
+                <Link href="/deliveries" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">My Deliveries</Link>
                 <button onClick={logout} className="text-gray-400 hover:text-red-400 flex items-center gap-2">
                   <LogOut className="h-4 w-4" /> Logout
                 </button>
