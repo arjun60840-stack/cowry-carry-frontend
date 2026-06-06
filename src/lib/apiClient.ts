@@ -1,4 +1,4 @@
-export const API_BASE = 'http://localhost:8080/api';
+export const API_BASE = 'https://cowry-carry-backend.onrender.com/api';
 
 export async function fetchWithAuth(endpoint: string, options: RequestInit = {}) {
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
